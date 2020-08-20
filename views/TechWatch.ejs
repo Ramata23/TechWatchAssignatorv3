@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-Watch AssignatorV3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <%- include('partial/header') %>
+
+    <div class="menu">
+        <nav>
+            <a href="#">History Tech-Watch</a>
+            <a href="#">Student list</a>
+            <a href="/techWatch">Tech-watch Assignation</a>
+          </nav>
+        </div>
+        <section>
+            <h4>Next tech-Watch</h4>
+            <ul>
+                <% for (var i = 0; i < groupsArray.length ; i++) { %>
+                    <li><%= groupsArray[i].name %></li>
+                    <% } %>
+            </ul>
+        </section>
+        <section>
+            <form action= "/addtechWatch" method="POST">
+              <label for="">Subject:</label>
+              <input type="text" name="name"/>
+              <!-- <label for="">Deadline:</label> -->
+              <!-- <input type="text" name="name"/> -->
+              Deadline <input id="date" type="date">
+
+              <label for="">Number of students</label>
+              <input type="text" name="name"/>
+              <button type="submit" class="btn btn-success">Create Tech-watch</button>
+
+            </form>
+    
+            
+        </section>
+</body>
+
+    <footer class="footer">
+        <p>Copyright: Alban Meurice & Thomas Jamais</p> 
+        <p>Contact: korvin.meurice@gmail.com <br>thomas.jamais95@gmail.com</p>
+    
+    </footer>
+    <script src="script.js"></script>
+
+</html>

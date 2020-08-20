@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-Watch AssignatorV3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="index.css">
+</head>
+  <body>
+    <%- include('partial/header') %>
+    <div class="menu">
+      <nav>
+          <a href="History.ejs">History Tech-Watch</a>
+          <a href="index.ejs">Home</a>
+          <a href="TechWatch.ejs">Tech-watch Assignation</a>
+        </nav>
+      </div>
+    <section>
+      <h2>List of students</h2>
+      <div>
+        <ul>
+          <% for (var i = 0; i < studentArray.length ; i++) { %>
+            <li> <%= studentArray[i].name %> </li>
+        <% } %>
+        </ul>
+      </section>
+      <section>
+        <form action= "/addStudents" method="POST">
+          <label for="">Add Student</label>
+          <input type="text" name="name"/>
+          <button type="submit" class="btn btn-success">Add student</button>
+        </form>
+
+        <form action= "/Students" method="DELETE">
+          <label for="">Delete Student</label>
+          
+          <input type="text" name="name"/>
+        
+          <button type="submit" class="btn btn-danger">Delete student</button>
+        </form>
+
+        
+        <!-- <div class="content">
+          <h1>Add Student</h1>
+        </div> -->
+
+    </section>
+    <footer class="footer">
+      <p>Copyright: Alban Meurice & Thomas Jamais</p> 
+      <p>Contact: korvin.meurice@gmail.com <br>thomas.jamais95@gmail.com</p>
+
+  </footer>
+  </body>
+</html>

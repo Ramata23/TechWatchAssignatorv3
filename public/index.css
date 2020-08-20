@@ -1,0 +1,56 @@
+h3{
+    color:#ffffff;
+    text-align: center;
+    height: 5.5rem;
+    padding-top: 1.5rem;
+}
+.header{
+    background-color: black;
+}
+.menu{
+    background-color: #e8ede9;
+    height: 5.5rem;
+    padding-top: 1.5rem;   
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #a4bab4;
+    padding: 0.4rem;
+    
+}
+.welcome{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.text{
+    text-align: left;
+}
+.next_tech{
+    background-color: #e8ede9;
+}
+.art1{
+    color: blue;
+    border-radius: 8rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.art2{
+    color: red;
+    border: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    background-color: black;
+    height: 5.5rem;
+    color: #ffffff;
+}
