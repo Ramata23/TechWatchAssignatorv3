@@ -46,7 +46,12 @@ app.get("/StudentList", async function (req, res) {
   res.render("StudentList.ejs", { studentArray: allStudents });
 });
 
-
+app.post("/deleteStudents", async function (req, res){
+  await fetch(`http://localhost:8080/Students/${req.body.deletename}`, {
+    method: "DELETE"
+    })
+res.redirect('/StudentList')
+});
 
 app.post("/addStudents", async function (req, res) {
   console.log(req.body.name)

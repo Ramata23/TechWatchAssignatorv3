@@ -13,9 +13,9 @@
     <%- include('partial/header') %>
     <div class="menu">
       <nav>
-          <a href="History.ejs">History Tech-Watch</a>
-          <a href="index.ejs">Home</a>
-          <a href="TechWatch.ejs">Tech-watch Assignation</a>
+          <a href="/History">History Tech-Watch</a>
+          <a href="/index">Home</a>
+          <a href="/TechWatch">Tech-watch Assignation</a>
         </nav>
       </div>
     <section>
@@ -34,10 +34,10 @@
           <button type="submit" class="btn btn-success">Add student</button>
         </form>
 
-        <form action= "/Students" method="DELETE">
+        <form action= "/deleteStudents" method="POST">
           <label for="">Delete Student</label>
           
-          <input type="text" name="name"/>
+          <input type="text" name="deletename"/>
         
           <button type="submit" class="btn btn-danger">Delete student</button>
         </form>

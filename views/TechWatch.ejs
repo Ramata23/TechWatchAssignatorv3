@@ -14,8 +14,8 @@
 
     <div class="menu">
         <nav>
-            <a href="#">History Tech-Watch</a>
-            <a href="#">Student list</a>
+            <a href="/History">History Tech-Watch</a>
+            <a href="/StudentList">Student list</a>
             <a href="/techWatch">Tech-watch Assignation</a>
           </nav>
         </div>
@@ -25,6 +25,7 @@
                 <% for (var i = 0; i < groupsArray.length ; i++) { %>
                     <li><%= groupsArray[i].name %></li>
                     <% } %>
+                    
             </ul>
         </section>
         <section>
@@ -33,9 +34,9 @@
               <input type="text" name="name"/>
               <!-- <label for="">Deadline:</label> -->
               <!-- <input type="text" name="name"/> -->
-              Deadline <input id="date" type="date">
+              Deadline: <input id="date" type="date">
 
-              <label for="">Number of students</label>
+              <label for="">Number of students:</label>
               <input type="text" name="name"/>
               <button type="submit" class="btn btn-success">Create Tech-watch</button>
 
